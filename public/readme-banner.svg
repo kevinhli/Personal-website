@@ -7,11 +7,11 @@
       <stop offset="0.45" stop-color="#07395f"/>
       <stop offset="1" stop-color="#11a6bf"/>
     </linearGradient>
-    <linearGradient id="panel" x1="874" y1="86" x2="1274" y2="344" gradientUnits="userSpaceOnUse">
+    <linearGradient id="panel" x1="930" y1="88" x2="1290" y2="324" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#F7FBFF" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#DFF7FF" stop-opacity="0.1"/>
     </linearGradient>
-    <linearGradient id="accent" x1="70" y1="118" x2="708" y2="118" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="70" y1="138" x2="690" y2="138" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#7BE7F7"/>
       <stop offset="1" stop-color="#F6C453"/>
     </linearGradient>
@@ -42,22 +42,30 @@
     <circle cx="1282" cy="302" r="8" fill="#E8FDFF"/>
   </g>
 
-  <rect x="858" y="78" width="454" height="228" rx="28" fill="url(#panel)" stroke="#C5F7FF" stroke-opacity="0.22"/>
-  <rect x="890" y="112" width="162" height="74" rx="18" fill="#04243C" fill-opacity="0.5" stroke="#7BE7F7" stroke-opacity="0.25"/>
-  <rect x="1072" y="112" width="208" height="74" rx="18" fill="#04243C" fill-opacity="0.5" stroke="#F6C453" stroke-opacity="0.28"/>
-  <rect x="890" y="202" width="390" height="72" rx="18" fill="#04243C" fill-opacity="0.5" stroke="#DFF7FF" stroke-opacity="0.22"/>
+  <rect x="930" y="78" width="356" height="232" rx="28" fill="url(#panel)" stroke="#C5F7FF" stroke-opacity="0.22"/>
+  <rect x="962" y="114" width="150" height="72" rx="18" fill="#04243C" fill-opacity="0.54" stroke="#7BE7F7" stroke-opacity="0.26"/>
+  <rect x="1130" y="114" width="124" height="72" rx="18" fill="#04243C" fill-opacity="0.54" stroke="#F6C453" stroke-opacity="0.3"/>
+  <rect x="962" y="204" width="292" height="84" rx="18" fill="#04243C" fill-opacity="0.54" stroke="#DFF7FF" stroke-opacity="0.22"/>
+  <rect x="980" y="236" width="96" height="28" rx="14" fill="#7BE7F7" fill-opacity="0.16" stroke="#7BE7F7" stroke-opacity="0.32"/>
+  <rect x="1090" y="236" width="124" height="28" rx="14" fill="#DFF7FF" fill-opacity="0.12" stroke="#DFF7FF" stroke-opacity="0.24"/>
+  <rect x="980" y="270" width="108" height="28" rx="14" fill="#F6C453" fill-opacity="0.16" stroke="#F6C453" stroke-opacity="0.28"/>
+  <rect x="1102" y="270" width="112" height="28" rx="14" fill="#DFF7FF" fill-opacity="0.12" stroke="#DFF7FF" stroke-opacity="0.24"/>
 
   <text x="70" y="108" fill="#DFF7FF" font-size="20" font-family="Verdana, Arial, sans-serif" letter-spacing="5">PERSONAL WEBSITE</text>
-  <text x="70" y="168" fill="url(#accent)" font-size="58" font-weight="700" font-family="Verdana, Arial, sans-serif">Kevin Liu Portfolio</text>
-  <text x="70" y="220" fill="#F4FBFF" font-size="28" font-family="Verdana, Arial, sans-serif">Swim-inspired storytelling for analytics, operations, and AI-driven workflow design.</text>
-  <text x="70" y="264" fill="#C5F7FF" font-size="20" font-family="Verdana, Arial, sans-serif">Built with React, Vite, Framer Motion, and GitHub Pages deployment.</text>
+  <text x="70" y="166" fill="url(#accent)" font-size="56" font-weight="700" font-family="Verdana, Arial, sans-serif">Kevin Liu Portfolio</text>
+  <text x="70" y="214" fill="#F4FBFF" font-size="26" font-family="Verdana, Arial, sans-serif">Analytics, operations, and AI workflow design</text>
+  <text x="70" y="248" fill="#F4FBFF" font-size="26" font-family="Verdana, Arial, sans-serif">told through a swim-inspired portfolio experience.</text>
+  <text x="70" y="292" fill="#C5F7FF" font-size="19" font-family="Verdana, Arial, sans-serif">Built with React, Vite, Framer Motion, and GitHub Pages.</text>
 
-  <text x="918" y="141" fill="#7BE7F7" font-size="14" font-family="Verdana, Arial, sans-serif" letter-spacing="2">CURRENT ROLE</text>
-  <text x="918" y="170" fill="#F8FDFF" font-size="24" font-weight="700" font-family="Verdana, Arial, sans-serif">NASA JPL</text>
+  <text x="992" y="145" fill="#7BE7F7" font-size="13" font-family="Verdana, Arial, sans-serif" letter-spacing="2">CURRENT ROLE</text>
+  <text x="992" y="173" fill="#F8FDFF" font-size="23" font-weight="700" font-family="Verdana, Arial, sans-serif">NASA JPL</text>
 
-  <text x="1100" y="141" fill="#F6C453" font-size="14" font-family="Verdana, Arial, sans-serif" letter-spacing="2">FOCUS</text>
-  <text x="1100" y="170" fill="#F8FDFF" font-size="24" font-weight="700" font-family="Verdana, Arial, sans-serif">Data + Automation</text>
+  <text x="1152" y="145" fill="#F6C453" font-size="13" font-family="Verdana, Arial, sans-serif" letter-spacing="2">FOCUS</text>
+  <text x="1152" y="173" fill="#F8FDFF" font-size="20" font-weight="700" font-family="Verdana, Arial, sans-serif">Data + AI</text>
 
-  <text x="918" y="230" fill="#BFEFFF" font-size="15" font-family="Verdana, Arial, sans-serif" letter-spacing="2">PORTFOLIO LANES</text>
-  <text x="918" y="258" fill="#F8FDFF" font-size="22" font-weight="700" font-family="Verdana, Arial, sans-serif">About  |  Experience  |  Projects  |  Contact</text>
+  <text x="992" y="228" fill="#BFEFFF" font-size="14" font-family="Verdana, Arial, sans-serif" letter-spacing="2">PORTFOLIO LANES</text>
+  <text x="1008" y="255" fill="#F8FDFF" font-size="15" font-weight="700" font-family="Verdana, Arial, sans-serif">About</text>
+  <text x="1119" y="255" fill="#F8FDFF" font-size="15" font-weight="700" font-family="Verdana, Arial, sans-serif">Experience</text>
+  <text x="1008" y="289" fill="#F8FDFF" font-size="15" font-weight="700" font-family="Verdana, Arial, sans-serif">Projects</text>
+  <text x="1129" y="289" fill="#F8FDFF" font-size="15" font-weight="700" font-family="Verdana, Arial, sans-serif">Contact</text>
 </svg>
