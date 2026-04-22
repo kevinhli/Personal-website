@@ -1,0 +1,63 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kevin Liu Portfolio Banner</title>
+  <desc id="desc">A swim-themed banner with deep blue gradients, lane lines, and portfolio details.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#03111f"/>
+      <stop offset="0.45" stop-color="#07395f"/>
+      <stop offset="1" stop-color="#11a6bf"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="874" y1="86" x2="1274" y2="344" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7FBFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#DFF7FF" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="70" y1="118" x2="708" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7BE7F7"/>
+      <stop offset="1" stop-color="#F6C453"/>
+    </linearGradient>
+    <filter id="softGlow" x="-80" y="-80" width="1560" height="580" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="420" rx="30" fill="url(#bg)"/>
+  <circle cx="162" cy="102" r="126" fill="#53D7EE" opacity="0.18" filter="url(#softGlow)"/>
+  <circle cx="1228" cy="302" r="118" fill="#F3C94C" opacity="0.18" filter="url(#softGlow)"/>
+
+  <path d="M0 274C145 246 274 244 392 262C514 281 626 322 742 319C873 316 961 240 1096 231C1206 223 1309 252 1400 280V420H0V274Z" fill="#041D31" opacity="0.32"/>
+  <path d="M0 304C108 279 212 274 320 289C462 309 565 363 695 359C853 355 952 271 1106 262C1212 256 1307 283 1400 313V420H0V304Z" fill="#083A5E" opacity="0.44"/>
+
+  <g opacity="0.78">
+    <path d="M72 316H1328" stroke="#C5F7FF" stroke-width="5" stroke-linecap="round" stroke-dasharray="20 18"/>
+    <path d="M72 344H1328" stroke="#7BE7F7" stroke-width="5" stroke-linecap="round" stroke-dasharray="20 18"/>
+    <path d="M72 372H1328" stroke="#F6C453" stroke-width="5" stroke-linecap="round" stroke-dasharray="20 18"/>
+  </g>
+
+  <g opacity="0.42">
+    <circle cx="118" cy="286" r="8" fill="#E8FDFF"/>
+    <circle cx="152" cy="248" r="5" fill="#E8FDFF"/>
+    <circle cx="220" cy="294" r="6" fill="#E8FDFF"/>
+    <circle cx="1180" cy="288" r="7" fill="#E8FDFF"/>
+    <circle cx="1232" cy="254" r="5" fill="#E8FDFF"/>
+    <circle cx="1282" cy="302" r="8" fill="#E8FDFF"/>
+  </g>
+
+  <rect x="858" y="78" width="454" height="228" rx="28" fill="url(#panel)" stroke="#C5F7FF" stroke-opacity="0.22"/>
+  <rect x="890" y="112" width="162" height="74" rx="18" fill="#04243C" fill-opacity="0.5" stroke="#7BE7F7" stroke-opacity="0.25"/>
+  <rect x="1072" y="112" width="208" height="74" rx="18" fill="#04243C" fill-opacity="0.5" stroke="#F6C453" stroke-opacity="0.28"/>
+  <rect x="890" y="202" width="390" height="72" rx="18" fill="#04243C" fill-opacity="0.5" stroke="#DFF7FF" stroke-opacity="0.22"/>
+
+  <text x="70" y="108" fill="#DFF7FF" font-size="20" font-family="Verdana, Arial, sans-serif" letter-spacing="5">PERSONAL WEBSITE</text>
+  <text x="70" y="168" fill="url(#accent)" font-size="58" font-weight="700" font-family="Verdana, Arial, sans-serif">Kevin Liu Portfolio</text>
+  <text x="70" y="220" fill="#F4FBFF" font-size="28" font-family="Verdana, Arial, sans-serif">Swim-inspired storytelling for analytics, operations, and AI-driven workflow design.</text>
+  <text x="70" y="264" fill="#C5F7FF" font-size="20" font-family="Verdana, Arial, sans-serif">Built with React, Vite, Framer Motion, and GitHub Pages deployment.</text>
+
+  <text x="918" y="141" fill="#7BE7F7" font-size="14" font-family="Verdana, Arial, sans-serif" letter-spacing="2">CURRENT ROLE</text>
+  <text x="918" y="170" fill="#F8FDFF" font-size="24" font-weight="700" font-family="Verdana, Arial, sans-serif">NASA JPL</text>
+
+  <text x="1100" y="141" fill="#F6C453" font-size="14" font-family="Verdana, Arial, sans-serif" letter-spacing="2">FOCUS</text>
+  <text x="1100" y="170" fill="#F8FDFF" font-size="24" font-weight="700" font-family="Verdana, Arial, sans-serif">Data + Automation</text>
+
+  <text x="918" y="230" fill="#BFEFFF" font-size="15" font-family="Verdana, Arial, sans-serif" letter-spacing="2">PORTFOLIO LANES</text>
+  <text x="918" y="258" fill="#F8FDFF" font-size="22" font-weight="700" font-family="Verdana, Arial, sans-serif">About  |  Experience  |  Projects  |  Contact</text>
+</svg>
