@@ -258,6 +258,14 @@ const workProjectCards = [
       'Monitors whether employees meet onsite badge criteria and surfaces status in a simple operational reporting view powered by custom SQL queries.',
   },
   {
+    organization: 'JPL',
+    stack: 'Power Apps',
+    title: 'Individual Development Plan Tool',
+    tag: 'Internal',
+    description:
+      'Power Apps tool that gives managers a clearer way to track employee goals, development priorities, and longer-term growth plans in one structured internal workflow.',
+  },
+  {
     organization: 'Oracle',
     stack: 'Oracle Analytics Cloud',
     title: 'Service-Level Agreement Dashboard',
