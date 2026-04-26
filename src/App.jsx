@@ -29,7 +29,7 @@ const sections = [
     meter: 25,
     navLabel: 'Intro + About',
     title: 'Kevin Liu',
-    subtitle: 'Senior Business Data Analyst and Power BI Group Lead at NASA JPL.',
+    subtitle: 'Senior Business Admin and Division Power BI Group Lead at NASA JPL.',
     copy: 'I build reporting systems, internal tools, and AI-assisted workflows that help teams turn operational complexity into clear decisions.',
   },
   {
