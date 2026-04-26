@@ -124,12 +124,13 @@ const experienceTimeline = [
     location: 'Pasadena, CA',
     roles: [
       {
-        title: 'Senior Business Data Analyst / Power BI Group Lead',
+        title: 'Senior Business Admin / Division Power BI Group Lead',
         dates: 'Oct 2022 - Present',
         bullets: [
           'Leads division-wide Power BI reporting used by 250+ stakeholders to monitor financial status, workforce planning, and operational performance across more than $200M in active projects.',
           'Develops and refines SQL queries plus Python workflows that unify financial, workforce, subcontract, and planning data into executive-ready reporting.',
-          'Utilized prompt engineering, GenAI tool usage with Codex, Claude Code, and Gemini to create workflow automation that standardizes processes, reduces waste, and accelerates analysis work inside the group.',
+          'Utilized prompt engineering and agent creation across GenAI tools including ChatGPT, Gemini, Codex, and Claude Code to create workflow automation that standardizes processes, reduces waste, and accelerates analysis work inside the group.',
+          'Utilized Power Apps and Power Automate to create custom applications and workflow automations that improve process visibility, streamline approvals, and support day-to-day operational execution.',
           'Delivered technical briefings and dashboard reviews for executive and non-technical audiences during monthly and quarterly operating reviews.',
           'Documented metric lineage and data-model mappings from Oracle source systems through Power BI outputs to keep reporting traceable and consistent.',
           'Led weekly group meetings focused on Power BI standards, reporting process improvements, and division reporting priorities.',
