@@ -78,4 +78,4 @@ flowchart LR
 3. Set the source to `GitHub Actions`.
 4. Use the workflow manually or push a new commit to trigger deployment.
 
-The expected live URL is [kevinhli.github.io/Personal-website](https://kevinhli.github.io/Personal-website/).
+The expected live URL is [kevinhli.github.io/Personal-website](https://kevinhli.github.io/Personal-website/). 
