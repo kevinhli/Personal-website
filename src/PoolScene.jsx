@@ -91,7 +91,7 @@ function PoolIllustration({ frame, layout, camera, entered }) {
         {layout.checkpoints.map((x, i) => <path key={i} d={`M${x} 282 v20 m-12,-20 h24`}
           fill="none" stroke="#eaf5ef" strokeWidth="2" opacity="0.5" />)}
       </g>
-      <path d="M-3000 191 H138 V310 H-3000 Z" fill="#f0eee5" />
+      <path className="pool-deck" d="M0 191 H138 V310 H0 Z" fill="#f0eee5" />
       <path d="M138 192 V310" stroke="#d3d4cd" strokeWidth="3" />
       <path d="M0 229 H135 M0 263 H135 M0 297 H135 M30 192 V310 M78 192 V310 M126 192 V310" stroke="#d3d4cd" strokeWidth="1" />
       <path d="M91 190 V178 H112 V190" fill="#173a49" />

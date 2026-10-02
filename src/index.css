@@ -4,7 +4,7 @@
   --body-font: 'Manrope', sans-serif;
   --display-font: var(--body-font);
   color: #102231;
-  background: #111b24;
+  background: #fff;
   font-family: var(--body-font);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@ body {
   margin: 0;
   min-width: 0;
   min-height: 100dvh;
-  background: #111b24;
+  background: #fff;
   overflow-x: hidden;
 }
 
