@@ -201,7 +201,7 @@ export default function PoolScene({ sections, activeSection, onNavigate, hasEnte
         pose = sampleSwimming(current.swimmer, strokeSeconds)
       }
       current.bubbles = stepBubbleField(current.bubbles, { pose, phase: current.phase,
-        velocity: current.swimmer.velocity, angularVelocity: current.swimmer.angularVelocity }, delta, sizeRef.current.width <= 682)
+        velocity: current.swimmer.velocity, angularVelocity: current.swimmer.angularVelocity }, delta, sizeRef.current.width <= 700)
       setFrame({ pose, progress, elapsed: current.elapsed, phase: current.phase, strokeSeconds, heading: current.swimmer.heading,
         bubbles: current.bubbles.particles })
       animationFrame = requestAnimationFrame(tick)

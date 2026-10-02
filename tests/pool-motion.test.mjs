@@ -173,7 +173,7 @@ test('the camera keeps the complete body in frame through mobile entry and edge 
       ...worldJoints(pose), [head[0] - 10, head[1]], [head[0] + 10, head[1]],
     ]
   }
-  for (const width of [302, 372, 682]) {
+  for (const width of [320, 390, 700]) {
     const layout = poolLayout(width, 238)
     for (let elapsed = 0; elapsed <= DIVE_DURATION + GLIDE_DURATION; elapsed += 10) {
       const pose = elapsed <= DIVE_DURATION ? sampleDive(elapsed / DIVE_DURATION)
@@ -254,9 +254,9 @@ test('the banner marker matches checkpoint centers and follows the entry camera 
   // Known centered SVG fits cover both horizontal and vertical letterboxing.
   assert.deepEqual(projectPoolPoint({ x: 430, y: 160 }, { origin: 100, width: 660 }, 330, 240), { x: 165, y: 120 })
   assert.deepEqual(projectPoolPoint({ x: 330, y: 160 }, { origin: 100, width: 460 }, 920, 320), { x: 460, y: 160 })
-  for (const [width, height] of [[1422, 264], [1422, 208], [750, 264], [372, 238], [302, 238]]) {
+  for (const [width, height] of [[3435, 264], [1440, 264], [1440, 208], [768, 264], [701, 264], [700, 238], [390, 238], [320, 238]]) {
     const layout = poolLayout(width, height)
-    const navigationWidth = Math.min(width - (width <= 682 ? 24 : 48), 1200)
+    const navigationWidth = Math.min(width - (width <= 700 ? 24 : 48), 1200)
     for (let i = 0; i < layout.checkpoints.length; i++) {
       const pose = sampleSwimming({ x: layout.checkpoints[i], heading: 0 }, 0)
       const marker = projectPoolPoint(pose, entryCamera(pose, DIVE_DURATION + GLIDE_DURATION, layout), width, height)

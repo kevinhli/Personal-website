@@ -10,8 +10,8 @@
 }
 
 .is-at-block .pool-stage {
-  height: calc(100dvh - 18px);
-  flex-basis: calc(100dvh - 18px);
+  height: 100dvh;
+  flex-basis: 100dvh;
 }
 
 .pool-navigation {

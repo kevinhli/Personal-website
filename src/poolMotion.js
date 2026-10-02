@@ -135,9 +135,9 @@ export function sampleGlide(progress) {
 // Match the swimmer's destinations to the real checkpoint button centers.
 // The world origin stays fixed as the camera expands to wider screens.
 export function poolLayout(width, height, count = 4) {
-  // The shell contributes 18px outside the scene. Extra world width leaves
+  // Match the navigation's mobile breakpoint. Extra world width leaves
   // room for a fully extended arm at the last checkpoint on narrow screens.
-  const compact = width <= 682
+  const compact = width <= 700
   const viewWidth = Math.max(660, width / Math.max(1, height) * 320)
   const navigationWidth = Math.min(width - (compact ? 24 : 48), 1200)
   const fractions = Array.from({ length: count }, (_, i) =>

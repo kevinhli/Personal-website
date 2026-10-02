@@ -1,19 +1,14 @@
 .app-shell {
   min-height: 100dvh;
-  padding: 8px;
   color: #102231;
   background: #111b24;
 }
 
 .swim-world {
   width: 100%;
-  max-width: 1680px;
-  margin: 0 auto;
-  border: 1px solid #325060;
-  border-radius: 8px;
   overflow: hidden;
   background: #fcfaf6;
-  height: calc(100dvh - 16px);
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }
@@ -894,7 +889,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .info-layout-experience { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 28px; }
 }
 @media (max-width: 920px) {
-  .app-shell { padding: 8px; }
   .info-stage { padding: 28px 24px 40px; }
   .info-stage-contact { padding: 24px; }
   .info-layout-experience, .info-layout-contact { grid-template-columns: 1fr; gap: 28px; }
