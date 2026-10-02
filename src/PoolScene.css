@@ -1,0 +1,119 @@
+.pool-stage {
+  position: relative;
+  height: 340px;
+  flex: 0 0 340px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 30% 0%, #daf7ff14, transparent 65%),
+    linear-gradient(180deg, #6ebddd, #287fa6 58%, #165f7b);
+  border-bottom: 1px solid #153e4f;
+  transition: height 2.2s cubic-bezier(.4, 0, .2, 1), flex-basis 2.2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.is-at-block .pool-stage {
+  height: calc(100dvh - 18px);
+  flex-basis: calc(100dvh - 18px);
+}
+
+.pool-navigation {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(100% - 48px, 1200px);
+  margin: 0 auto;
+  height: 64px;
+  border-bottom: 1px solid #16495d55;
+}
+
+.is-at-block .pool-navigation { visibility: hidden; }
+.has-entered .pool-navigation { animation: reveal-checkpoints 450ms both; }
+.checkpoint-button {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 8px 14px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: #153948;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms, border-color 160ms;
+}
+
+.checkpoint-button:hover { background: #ffffff18; }
+.checkpoint-button.is-active { border-bottom-color: #15394899; background: #f7f4ee50; color: #102b3e; }
+.checkpoint-meter { font-size: 12px; font-weight: 500; opacity: 0.85; white-space: nowrap; }
+.pool-progress-marker {
+  position: absolute;
+  z-index: 4;
+  top: 60px;
+  left: var(--swimmer-x);
+  width: 64px;
+  height: 4px;
+  background: #102b3e;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.pool-progress-marker::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 6px);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #102b3e;
+}
+.pool-swimmer-guide {
+  position: absolute;
+  top: 0;
+  left: var(--swimmer-x);
+  height: var(--swimmer-guide-height);
+  border-left: 1px dashed #15394850;
+  opacity: var(--swimmer-guide-opacity);
+  pointer-events: none;
+}
+.pool-scene {
+  position: absolute;
+  inset: 64px 0 12px;
+  overflow: hidden;
+  transition: inset 2.2s cubic-bezier(.4, 0, .2, 1);
+}
+.is-at-block .pool-scene { inset: 88px 0 120px; }
+.pool-illustration { position: relative; display: block; width: 100%; height: 100%; }
+.pool-bubbles { pointer-events: none; }
+.entry-heading { position: absolute; top: 30px; left: 24px; right: 24px; text-align: center; }
+.entry-heading h1 { margin: 0; font-family: var(--body-font); font-size: 32px; font-weight: 700; letter-spacing: -0.025em; color: #102b3e; }
+.pool-entry { position: absolute; bottom: 30px; left: 24px; right: 24px; text-align: center; z-index: 3; }
+.dive-button { min-height: 48px; padding: 12px 36px; border: 1px solid #12364b; border-radius: 6px; background: #102b3e; color: #f7f4ee; font-size: 17px; font-weight: 700; cursor: pointer; transition: background-color 160ms; animation: dive-button-pulse 4.8s ease-in-out infinite; }
+.dive-button:hover { background: #18455d; }
+.dive-button:focus-visible { outline-color: #f7f4ee; }
+.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after { animation: none !important; transition: none !important; }
+@keyframes reveal-checkpoints { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dive-button-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 #edfaff00; }
+  50% { box-shadow: 0 0 10px 2px #edfaff36; }
+}
+@media (max-width: 700px) {
+  .pool-stage { height: 316px; flex-basis: 316px; }
+  .pool-navigation { width: calc(100% - 24px); height: 66px; }
+  .pool-progress-marker { top: 62px; width: 40px; }
+  .checkpoint-button { display: grid; grid-template-rows: 1fr auto; justify-items: center; align-items: center; gap: 3px; font-size: 11px; padding: 10px 2px; }
+  .checkpoint-button > span:first-child { white-space: normal; line-height: 1.3; }
+  .checkpoint-meter { font-size: 10px; }
+  .pool-scene { top: 66px; }
+  .entry-heading { top: 30px; }
+}
+@media (max-height: 500px) {
+  .is-at-block .pool-scene { inset: 60px 0 92px; }
+  .entry-heading { top: 12px; }
+  .entry-heading h1 { font-size: 24px; }
+  .pool-entry { bottom: 12px; }
+  .dive-button { min-height: 40px; padding: 8px 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pool-stage, .pool-scene { transition: none; }
+  .has-entered .pool-navigation, .dive-button { animation: none; }
+}

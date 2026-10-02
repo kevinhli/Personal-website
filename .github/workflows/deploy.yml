@@ -32,6 +32,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check code and dive geometry
+        run: |
+          npm run lint
+          npm test
+
       - name: Build site
         run: npm run build
 
